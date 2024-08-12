@@ -3,8 +3,7 @@ This project is a pet image classification system implemented in Python. It uses
 
 # Features
 * Image Classification: Classifies images to identify if the pet is a dog and, if so, determines the breed.
-* Statistics Calculation: Computes various statistics on the classification results, such as the number of correct matches, correct dog identifications, and correct breed   
-  identifications.
+* Statistics Calculation: Computes various statistics on the classification results, such as the number of correct matches, correct dog identifications, and correct breed identifications.
 * Results Adjustment: Adjusts the classification results to include additional metadata.
 * Input Arguments Handling: Manages input arguments for running the classification script.
 * Results Printing: Provides formatted output of the classification results and statistics.
