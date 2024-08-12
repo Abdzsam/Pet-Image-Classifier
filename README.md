@@ -19,9 +19,9 @@ This project is a pet image classification system implemented in Python. It uses
 * print_results.py: Prints the classification results and statistics.
 
 # How to Use
-1.Place your pet images in the pet_images directory.
-2.Run the check_images.py script with appropriate arguments to classify the images.
-3.View the results and statistics printed by the script or saved in the output files.
+* Place your pet images in the pet_images directory.
+* Run the check_images.py script with appropriate arguments to classify the images.
+* View the results and statistics printed by the script or saved in the output files.
 
 ```
 python check_images.py --dir pet_images/ --arch resnet --dogfile dognames.txt
