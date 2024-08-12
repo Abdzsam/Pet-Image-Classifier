@@ -1,7 +1,5 @@
 from time import time, sleep
 
-from print_functions_for_lab_checks import *
-
 from get_input_args import get_input_args
 from get_pet_labels import get_pet_labels
 from classify_images import classify_images
@@ -26,32 +24,18 @@ def main():
     # Parse command line arguments
     in_arg = get_input_args()
 
-  # Check the command line arguments
-    check_command_line_arguments(in_arg)
-
 # Get pet labels from the image directory
     results = get_pet_labels(in_arg.dir)
 
-# Check the pet image labels
-    check_creating_pet_image_labels(results)
-
 # Classify the images using the specified CNN model architecture
     classify_images(in_arg.dir, results, in_arg.arch)
-   
-   # Check the image classification results
-    check_classifying_images(results)    
+    
 
     # Adjust the results for dog/non-dog classification
     adjust_results4_isadog(results, in_arg.dogfile)
 
-    # Check the labels for dog/non-dog classification
-    check_classifying_labels_as_dogs(results)
-
     # Calculate statistics on the results
     results_stats = calculates_results_stats(results)
-
-# Check the calculated results
-    check_calculating_results(results, results_stats)
 
 # Print the results and statistics
     print_results(results, results_stats, in_arg.arch, True, True)
